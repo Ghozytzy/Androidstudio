@@ -29,13 +29,5 @@ public class ServiceGenerator {
         }
         return retrofit.create(serviceClass);
     }
-    public static <Service> Service createService(Class<Service> serviceClass) {
-        if (!httpClient.interceptors().contains(logging)) {
-            httpClient.addInterceptor(logging);
-            builder.client(httpClient.build());
-            retrofit = builder.build();
-        }
-        return retrofit.create(serviceClass);
-    }
 }
 

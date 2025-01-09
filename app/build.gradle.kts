@@ -45,6 +45,7 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.okhttp3)
     implementation(libs.logging.interceptor)
+    implementation (libs.picasso)
 
 
 }
