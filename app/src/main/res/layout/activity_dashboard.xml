@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/txApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:text="My Dashboard"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="16dp" />
+
+                <!-- Total Users Table -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:background="#DDDDDD"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+                        <TableRow android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/users_9434514"
+                                    android:layout_marginEnd="16dp" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="Total Users"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/totalUsers"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="5"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </TableRow>
+                </TableLayout>
+
+                <!-- Location Table -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:background="#DDDDDD"
+                    android:padding="16dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="16dp">
+                        <TableRow android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/location_4313471"
+                                    android:layout_marginEnd="16dp" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="Location"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/location"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="22"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </TableRow>
+                </TableLayout>
+
+                <!-- Device Table -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:background="#DDDDDD"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp">
+                        <TableRow android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/devicekerenas"
+                                    android:layout_marginEnd="16dp" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="Device"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/device"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="22"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </TableRow>
+                </TableLayout>
+
+                <!-- Alarm Log Table -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:background="#DDDDDD"
+                    android:padding="16dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="16dp">
+                        <TableRow android:layout_marginBottom="8dp">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/warning_4076074"
+                                    android:layout_marginEnd="16dp" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="Alarm Log"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/alarmLog"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="11473"
+                                            android:textStyle="bold" />
+                                </LinearLayout>
+                        </TableRow>
+                </TableLayout>
+
+                <!-- Trafo Table -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:background="#2C2C2E"
+                    android:padding="16dp"
+                    android:stretchColumns="1">
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="16dp"
+                            android:background="#DDDDDD"
+                            android:padding="16dp"
+                            android:stretchColumns="1">
+                                <TableRow android:layout_marginBottom="5dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="Trafo 2 PLN Kantor Pusat"
+                                            android:textStyle="bold" />
+                                </TableRow>
+                        </TableLayout>
+
+                        <!-- Si VOltage -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Volatge "
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="50dp"/>
+
+                                <!-- RS : 408.87 V -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="RS : 408.87 V"
+                                            android:textStyle="bold" />
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- LinearLayout for side-by-side placement -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="100dp"/>
+
+                                <!-- ST : 409.44 V -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="ST : 409.44 V"
+                                            android:textStyle="bold" />
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- LinearLayout for side-by-side placement -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="100dp"/>
+
+                                <!-- TR : 406.13 V -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="TR : 406.13 V"
+                                            android:textStyle="bold" />
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- Arus -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Arus"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="70dp"/>
+
+                                <!-- R : 0.0 A -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="R : 0.0 A"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="35dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- LinearLayout for side-by-side placement -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!--  -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="100dp"/>
+
+                                <!-- S : 0.0 A -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="S : 0.0 A"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="35dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- LinearLayout for side-by-side placement -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="100dp"/>
+
+                                <!-- T : 0.0 A -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="T : 0.0 A"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="35dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- Freq -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Freq"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="70dp"/>
+
+                                <!-- 49.990 Hz -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="49.990 Hz"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="20dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- KWh -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="KWh"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="75dp"/>
+
+                                <!-- 0.0 -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="0.0"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="70dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <!-- Suhu -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center">
+
+                                <!-- Nested Row 2 TextView -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Suhu"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="70dp"/>
+
+                                <!--  35.81 °C -->
+                                <TableLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#DDDDDD"
+                                    android:padding="16dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2C2C2E"
+                                            android:text="35.81 °C"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="35dp"/>
+                                </TableLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#DDDDDD"
+                            android:text="Report"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="35dp"/>
+                        <TableRow android:layout_marginBottom="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#DDDDDD"
+                            android:text="Detail"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="35dp"/>
+
+                </TableLayout>
+
+        </LinearLayout>
+
+</ScrollView>
