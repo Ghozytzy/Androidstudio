@@ -53,6 +53,7 @@ public class JokeNorris extends AppCompatActivity {
             @Override
             public void onResponse(Call<Joke> call, Response<Joke> response) {
                 Joke joke = response.body();
+                assert joke != null;
                 Picasso.get().load(joke.getIconUrl()).into(iconImage);
                 jokeText.setText(joke.getValue());
             }
