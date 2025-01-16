@@ -5,6 +5,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface JokesService{
-    @GET("/jokes/random") // Menandakan endpoint API yang akan dipanggil
-    Call<Joke> getRandomJoke();  // Mendeklarasikan metode untuk mendapatkan data 'Joke'
-}
+        @GET("/jokes/random") // Menandakan endpoint API yang akan dipanggil
+        Call<Joke> getRandomJoke();  // Mendeklarasikan metode untuk mendapatkan data 'Joke'
+    }
+

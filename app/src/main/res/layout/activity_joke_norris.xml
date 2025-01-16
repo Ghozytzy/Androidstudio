@@ -19,7 +19,7 @@
         android:id="@+id/text_joke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HII"
+        android:text="TextView"
         tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="359dp" />
 
