@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.okhttp3)
     implementation(libs.logging.interceptor)
     implementation (libs.picasso)
+    implementation (libs.security.crypto)
 
 
 }

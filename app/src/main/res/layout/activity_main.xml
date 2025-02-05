@@ -37,6 +37,18 @@
         android:layout_height="wrap_content"
         android:text="Login" />
 
+    <Button
+        android:id="@+id/buttonJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:text="Joke" />
+
+    <Button
+        android:id="@+id/buttonLoginAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayo Login" />
 
     <LinearLayout
         android:layout_width="match_parent"

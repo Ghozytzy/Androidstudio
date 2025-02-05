@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword;
-    private Button buttonLogin, buttonBuat, buttonReset;
+    private Button buttonLogin, buttonJoke, buttonBuat, buttonReset, buttonLoginAkun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        buttonJoke = findViewById(R.id.buttonJoke);
+        buttonLoginAkun = findViewById(R.id.buttonLoginAkun);
         buttonBuat = findViewById(R.id.buttonBuat);
         buttonReset = findViewById(R.id.buttonReset);
 
@@ -44,6 +46,26 @@ public class MainActivity extends AppCompatActivity {
                     // Failed login
                     Toast.makeText(MainActivity.this, "Maaf ada yang salah", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        // Set a click listener for the register button
+        buttonJoke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to another activity (Register)
+                Intent joke = new Intent(MainActivity.this, JokeNorris.class);
+                startActivity(joke);
+            }
+        });
+
+        // Set a click listener for the register button
+        buttonLoginAkun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to another activity (Register)
+                Intent login = new Intent(MainActivity.this, Login.class);
+                startActivity(login);
             }
         });
 
